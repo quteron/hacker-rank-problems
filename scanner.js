@@ -3,7 +3,7 @@
 
   function Scanner(input) {
     this.input = input;
-    this.tokens = input.split(/\s/);
+    this.tokens = input.split(/\s+/);
     this.pos = 0;
   }
 
