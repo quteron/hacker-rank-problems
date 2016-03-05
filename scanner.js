@@ -32,4 +32,13 @@
 
     return array;
   };
+
+  Scanner.prototype.nextArray = function nextArray(size) {
+      var array = new Array(size);
+      for (var i = 0; i < size; i++) {
+          array[i] = this.nextNumber();
+      }
+  
+      return array;
+  };
 }());
