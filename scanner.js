@@ -41,4 +41,17 @@
 
     return array;
   };
+
+  Scanner.prototype.nextMatrix = function nextArray() {
+    var size = this.nextNumber();
+    var matrix = new Array(size);
+    for (var i = 0; i < size; i++) {
+      matrix[i] = new Array(size);
+      for (var j = 0; j < size; j++) {
+          matrix[i][j] = this.nextNumber();
+      }
+    }
+  
+    return matrix;
+  };
 }());
