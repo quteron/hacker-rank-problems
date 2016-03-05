@@ -31,7 +31,7 @@ Scanner.prototype.nextArray = function nextArray() {
   return array;
 };
 
-Scanner.prototype.nextArray = function nextArray(size) {
+Scanner.prototype.nextArrayOfSize = function nextArray(size) {
     var array = new Array(size);
     for (var i = 0; i < size; i++) {
         array[i] = this.nextNumber();
