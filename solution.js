@@ -22,7 +22,7 @@ Scanner.prototype.hasNext = function hasNext() {
 };
 
 Scanner.prototype.nextArray = function nextArray(size) {
-  if(size === undefined') {
+  if(size === undefined) {
     size = this.nextNumber();
   }
   
