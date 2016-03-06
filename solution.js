@@ -21,23 +21,17 @@ Scanner.prototype.hasNext = function hasNext() {
   return this.pos !== this.tokens.length;
 };
 
-Scanner.prototype.nextArray = function nextArray() {
-  var size = this.nextNumber();
+Scanner.prototype.nextArray = function nextArray(size) {
+  if(size === undefined) {
+    size = this.nextNumber();
+  }
+  
   var array = new Array(size);
   for (var i = 0; i < size; i++) {
     array[i] = this.nextNumber();
   }
 
   return array;
-};
-
-Scanner.prototype.nextArrayOfSize = function nextArray(size) {
-    var array = new Array(size);
-    for (var i = 0; i < size; i++) {
-        array[i] = this.nextNumber();
-    }
-
-    return array;
 };
 
 Scanner.prototype.nextMatrix = function nextArray() {
