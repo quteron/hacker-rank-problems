@@ -1,3 +1,4 @@
+/*------------------------------ Challenge Solution ------------------------------*/
 function processData(input) {
     var scanner = new Scanner(input);
     var t = scanner.nextNumber();
@@ -5,7 +6,7 @@ function processData(input) {
     while(t > 0) {
         var array = scanner.nextArray();
         var left = 0;
-        var right = array.reduce((i, s) => {return i + s;}, 0);
+        var right = array.reduce((s, i) => {return i + s;}, 0);
 
         var result = "NO";
         for(var i of array) {

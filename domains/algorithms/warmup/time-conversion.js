@@ -1,3 +1,4 @@
+/*------------------------------ Challenge Solution ------------------------------*/
 function processData(input) {
     var sc = new Scanner(input);
     var time = sc.nextString();
@@ -12,7 +13,6 @@ function processData(input) {
             console.log((hours + 12) + time.slice(2).slice(0, -2));
         }
     } else {
-        var hours = Number(time.slice(0, 2));
         if(hours === 12) {
             console.log("00" + time.slice(2).slice(0, -2));
         } else {

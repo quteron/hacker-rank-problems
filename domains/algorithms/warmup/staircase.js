@@ -1,3 +1,4 @@
+/*------------------------------ Challenge Solution ------------------------------*/
 function processData(input) {
     var sc = new Scanner(input);
     var n = sc.nextNumber();
