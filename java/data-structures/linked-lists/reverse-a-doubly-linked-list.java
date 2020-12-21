@@ -14,7 +14,7 @@ static DoublyLinkedListNode reverse(DoublyLinkedListNode head) {
 }
 
 // recursion
-static DoublyLinkedListNode reverseRecursive(DoublyLinkedListNode head) {
+static DoublyLinkedListNode reverse(DoublyLinkedListNode head) {
     DoublyLinkedListNode next = head.next;
     head.next = head.prev;
     head.prev = next;

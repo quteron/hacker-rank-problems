@@ -1,5 +1,5 @@
 boolean checkBST(Node root) {
-    return checkBST(root, Integer.MIN_VALUE,  Integer.MAX_VALUE);
+    return checkBST(root, Integer.MIN_VALUE, Integer.MAX_VALUE);
 }
 
 boolean checkBST(Node root, int min, int max) {
